@@ -46,6 +46,7 @@ RUN \
     simplexml \
     pdo_mysql \
     pdo_sqlite && \
+  a2enmod rewrite && \
   mkdir /data && \
   chown -R www-data:www-data /data && \
   echo "**** cleanup ****" && \
